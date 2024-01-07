@@ -1,0 +1,16 @@
+{
+    "name": "mcman",
+    "id": "mcman",
+    "version": "1.0.0",
+    "description": "Installs mcman",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": "latest",
+            "description": "Which version to use"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
