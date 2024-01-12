@@ -1,10 +1,10 @@
 #!/bin/sh
 set -e
 
-echo "Installing mcman"
+echo "Activating feature 'mcman'"
 
-curl https://sh.rustup.rs -sSf | sh -s -- -y
-PATH="/root/.cargo/bin:${PATH}"
-cargo install --git https://github.com/ParadigmMC/mcman
+wget https://github.com/ParadigmMC/mcman/releases/${VERSION}/download/mcman
+mv ./mcman /usr/bin/
+chmod +x /usr/bin/mcman
 
-echo "mcman ${VERSION} was compiled and installed"
+echo "mcman ${VERSION} was downloaded and installed from GitHub Releases"
