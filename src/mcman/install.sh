@@ -3,8 +3,7 @@ set -e
 
 echo "Activating feature 'mcman'"
 
-wget https://github.com/ParadigmMC/mcman/releases/${VERSION}/download/mcman
-mv ./mcman /usr/bin/
+curl -L -o /usr/bin/mcman https://github.com/ParadigmMC/mcman/releases/${VERSION}/download/mcman
 chmod +x /usr/bin/mcman
 
 echo "mcman ${VERSION} was downloaded and installed from GitHub Releases"
